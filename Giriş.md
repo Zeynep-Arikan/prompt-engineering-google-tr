@@ -1,2 +1,6 @@
-Veri uzmanı veya makine öğrenimi mühendisi olmanıza gerek yok. Herkes Prompt yazabilir.
+Büyük bir dil modeli girişi ve çıktısı hakkında düşünürken, bir metin istemi (bazen görüntü istemleri gibi diğer modalitelerle birlikte) modelin belirli bir çıktıyı tahmin etmek için kullandığı girdidir. Bir veri bilimcisi veya makine öğrenimi mühendisi olmanıza gerek yok - herkes bir istem (prompt) yazabilir. Ancak, en etkili istemi oluşturmak karmaşık olabilir. İsteminizin birçok yönü etkinliğini etkiler: kullandığınız model, modelin eğitim verileri, model yapılandırmaları, kelime seçiminiz, stil ve ton, yapı ve bağlam hepsi önemlidir. Bu nedenle, istem mühendisliği yinelemeli bir süreçtir. Yetersiz istemler belirsiz, yanlış yanıtlar verebilir ve modelin anlamlı çıktı sağlama yeteneğini engelleyebilir.
 
+Gemini sohbet robotu ile sohbet ettiğinizde, temel olarak istemler yazarsınız, ancak bu teknik inceleme, Vertex AI içinde veya API kullanarak Gemini modeli için istemler yazmaya odaklanmaktadır, çünkü modele doğrudan istem vererek yapılandırmaya erişebilirsiniz
+sıcaklık (temperature) vb gibi.
+
+Bu teknik dokümanda istem mühendisliği ayrıntılı olarak ele alınmaktadır. Başlamanıza yardımcı olmak için çeşitli istem tekniklerine bakacağız ve bir istem uzmanı olmak için ipuçları ve en iyi uygulamaları paylaşacağız. Ayrıca istemler oluştururken karşılaşabileceğiniz zorluklardan bazılarını da ele alacağız.
