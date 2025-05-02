@@ -22,10 +22,14 @@ Tablo 2, bir few-shot istem örneğini göstermektedir. Daha önce kullandığı
 | **Token Sınırı**    | 250 |
 | **Top-K**           | N/A |
 | **Top-P**           | 1 |
-| **İstem (Prompt)**  | Pizza siparişlerini geçerli JSON formatına dönüştürün:  <br><br> **ÖRNEK:** <br> I want a small pizza with cheese, tomato sauce, and pepperoni. <br> **JSON Yanıtı:**  <br> ```json  <br> { <br> "size": "small", <br> "type": "normal", <br> "ingredients": [["cheese", "tomato sauce", "pepperoni"]] <br> } <br> ``` <br><br> **ÖRNEK:** <br> Can I get a large pizza with tomato sauce, basil and mozzarella? <br> ```json  <br> { <br> "size": "large", <br> "type": "normal", <br> "ingredients": [["tomato sauce", "basil", "mozzarella"]] <br> } <br> ``` <br><br> Now, I would like a large pizza, with the first half cheese and mozzarella. And the other half tomato sauce, ham and pineapple. <br><br> **JSON Yanıtı:** |
+| **İstem (Prompt)**  | Pizza siparişlerini geçerli JSON formatına dönüştürün:  <br><br> **ÖRNEK:** <br> I want a small pizza with cheese, tomato sauce, and pepperoni. <br> **JSON Yanıtı:**  <br> ```json{ 
+"size": "small", 
+"type": "normal", 
+"ingredients": [["cheese", "tomato sauce", "pepperoni"]] 
+ } <``` <br><br> **ÖRNEK:** <br> Can I get a large pizza with tomato sauce, basil and mozzarella? <br> ```json  <br> { <br> "size": "large", <br> "type": "normal", <br> "ingredients": [["tomato sauce", "basil", "mozzarella"]] <br> } <br> ``` <br><br> Now, I would like a large pizza, with the first half cheese and mozzarella. And the other half tomato sauce, ham and pineapple. <br><br> **JSON Yanıtı:** |
 | **Çıktı**           | ```json <br> { <br> "size": "large", <br> "type": "half-half", <br> "ingredients": [["cheese", "mozzarella"], ["tomato sauce", "ham", "pineapple"]] <br> } <br> ``` |
     
-        
+
 İstemleriniz için örnekler seçerken, gerçekleştirmek istediğiniz göreve doğrudan ilgili örnekler kullanmalısınız.Seçilen örneklerin çeşitli, yüksek kaliteli ve dil açısından düzgün biçimde yazılmış olması gerekir. Küçük bir hata bile modelin kafasını karıştırabilir ve istenmeyen çıktılara yol açabilir.
 
 Eğer modelin farklı türde girdilere karşı dayanıklı (robust) yanıtlar üretmesini istiyorsanız, örneklerinizin içine uç durumları (edge cases) da dahil etmeniz önemlidir.Uç durumlar; alışılmadık veya beklenmeyen girdilerdir, ancak modelin yine de bu girdileri doğru şekilde işleyebilmesi gerekir.
