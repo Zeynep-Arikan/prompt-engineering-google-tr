@@ -1,0 +1,3 @@
+Büyük Dil Modelleri (LLM'ler), talimatları takip edecek şekilde ayarlanmış ve büyük veri kümeleri üzerinde eğitilmiştir; bu sayede bir istemi anlayabilir ve buna uygun bir yanıt üretebilirler.
+Ancak, LLM'ler kusursuz değildir; istem metni ne kadar açık ve anlaşılır olursa, modelin bir sonraki olası metni doğru şekilde tahmin etmesi o kadar kolaylaşır. Bununla birlikte, LLM’lerin nasıl eğitildiğinden ve nasıl çalıştığından faydalanan belirli teknikler, modelden daha ilgili ve tutarlı çıktılar elde etmenize yardımcı olur. Artık istem mühendisliğinin ne olduğunu ve ne gerektirdiğini anladığımıza göre, en önemli istemleme tekniklerinden bazı örneklere geçelim.
+
